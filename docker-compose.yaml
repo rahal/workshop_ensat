@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+
+  test:
+    build: ./
+    ports:
+       - "8080:8080"
+    command: goconvey -host 0.0.0.0
+    volumes:
+       - ./:/go/src/workshop
+    working_dir: /go/src/workshop
+
