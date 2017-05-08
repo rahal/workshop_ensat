@@ -15,7 +15,7 @@ func TestMySum(t *testing.T) {
 }
 
 func TestMySumConvey(t *testing.T) {
-	Convey("When given 2 integers to add", t, func() {
+	Convey("When given 2.. integers to add", t, func() {
 		So(MySum(5, 5), ShouldEqual, 10)
 		So(1<<11, ShouldEqual, 2048)
 		So(MySum(5, 1<<100), ShouldEqual, 1<<100+5.)
